@@ -47,7 +47,7 @@ const Signup = () => {
       return;
     }
     try {
-      await axios.post("http://localhost:5000/api/auth/signup", formData);
+      await axios.post("https://joply-backend.onrender.com/api/auth/signup", formData);
       message.success("Signup successful! You can now login.");
       setFormData({ username: "", email: "", password: "", address: "", bio: "" });
     } catch (err) {

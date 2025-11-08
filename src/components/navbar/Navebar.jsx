@@ -40,9 +40,9 @@ const Navbar = () => {
   // Fetch logo
   const fetchLogo = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/logo");
+      const res = await fetch("https://joply-backend.onrender.com/api/logo");
       const data = await res.json();
-      if (data.url) setLogo("http://localhost:5000" + data.url);
+      if (data.url) setLogo("https://joply-backend.onrender.com" + data.url);
     } catch (err) {
       message.error("Failed to load logo 😕");
     } finally {
