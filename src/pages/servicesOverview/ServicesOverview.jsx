@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Typography, Image, Card } from "antd";
-import "./ServicesOverview.css";
+import "./servicesOverview.css";
 
 import Mask_group from "../../assets/images/Mask_group.png"
 import Find_the_Service from "../../assets/images/Find_the_Service.png"

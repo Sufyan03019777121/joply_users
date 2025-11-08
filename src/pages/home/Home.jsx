@@ -4,7 +4,7 @@ import sliderBackground from "../../assets/images/Slider.png";
 import sliderGirlImage1 from "../../assets/images/sliderGirlImage1.png";
 import sliderGirlImage2 from "../../assets/images/sliderGirlImage2.png";
 import sliderGirlImage3 from "../../assets/images/sliderGirlImage3.png";
-import "./Home.css";
+import "./home.css";
 import SearchBar from "../searchBar/SearchBar"
 import ServicesOverview from "../servicesOverview/ServicesOverview";
 
