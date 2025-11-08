@@ -1,0 +1,122 @@
+.header-container {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 43vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px 40px;
+  font-family: "Outfit", sans-serif;
+  color: #fff;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  background-color: #02445d;
+  margin-bottom: 30px;
+  border: 8px solid #04afef;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.search-bar:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.search-input {
+  flex: 1;
+  background: #02445d;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+.search-input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.search-icon {
+  color: #fff;
+  font-size: 22px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar:hover .search-icon {
+  color: #04afef;
+  transform: scale(1.2);
+}
+
+/* Buttons */
+.header-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.btn-primary {
+  background-color: #1890ff;
+  border: none;
+  border-radius: 8px;
+  padding: 0 30px;
+  font-weight: 500;
+  min-width: 120px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #40a9ff;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid #1890ff;
+  color: #1890ff;
+  background: white;
+  border-radius: 8px;
+  padding: 0 30px;
+  font-weight: 500;
+  min-width: 120px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #1890ff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Message */
+.header-message {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  color: #656d70;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    height: auto;
+    padding: 20px 10px 30px;
+  }
+  .header-message {
+    font-size: 14px;
+  }
+}

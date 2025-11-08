@@ -1,0 +1,126 @@
+.navbar-container {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 10px 25px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Left Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.navbar-logo-img {
+  width: 43px;
+  height: 42px;
+  object-fit: contain;
+  background-color: #044c9a;
+  padding: 6px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-logo-default {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-title {
+  margin: 0;
+  color: #1890ff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Center Menu */
+.navbar-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+  transition: all 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #40a9ff;
+}
+
+.navbar-link.active {
+  color: #1890ff;
+}
+
+/* Right Side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-btn {
+  background: #1890ff !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar-btn:hover {
+  background: #40a9ff !important;
+}
+
+.navbar-user-icon {
+  font-size: 22px;
+  color: #555;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.navbar-user-icon:hover {
+  transform: scale(1.2);
+}
+
+.navbar-menu-icon {
+  font-size: 22px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Drawer */
+.drawer-link {
+  display: block;
+  padding: 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.drawer-link:hover {
+  color: #1890ff;
+}
+
+.drawer-link.active {
+  color: #1890ff;
+}
+
+.drawer-btn {
+  margin-top: 20px;
+  border-radius: 8px !important;
+}

@@ -1,0 +1,139 @@
+/* ===== Login Container ===== */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* optional background */
+}
+
+/* ===== Title ===== */
+.login-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #464646;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ===== Divider ===== */
+.login-divider {
+  width: 100%;
+  max-width: 400px;
+  border-color: #EBE5DF;
+  margin: 20px 0;
+}
+
+/* ===== Google Login Button (Colorful G) ===== */
+.google-login-btn {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #EBE5DF;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0 10px;
+  height: 45px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+
+.google-login-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* ===== Colorful G inside Google button ===== */
+.google-login-btn .google-g {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.google-g span {
+  display: inline-block;
+}
+
+.google-g .g-blue { color: #4285F4; }
+.google-g .g-red { color: #EA4335; }
+.google-g .g-yellow { color: #FBBC05; }
+.google-g .g-green { color: #34A853; }
+
+/* ===== OR Divider ===== */
+.or-divider {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.or-divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #EBE5DF;
+}
+
+.or-divider-text {
+  margin: 0 10px;
+  color: #828282;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* ===== Input Fields ===== */
+.login-input {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  padding: 8px 10px;
+  border: 2px solid #04AFEF;
+  border-radius: 8px;
+  color: #828282;
+  font-size: 14px;
+}
+
+/* ===== Login Button ===== */
+.login-btn {
+  width: 100%;
+  max-width: 400px;
+  background-color: #1890ff;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: #1070d7;
+}
+
+/* ===== Signup Redirect ===== */
+.signup-redirect {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #828282;
+}
+
+.signup-redirect a {
+  color: #1890ff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signup-redirect a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,88 @@
+
+
+.home-slide {
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  color: #fff;
+  transition: all 0.8s ease-in-out;
+  font-family: "Outfit", sans-serif;
+}
+
+.home-text {
+  max-width: 600px;
+  width: 50%;
+}
+
+.home-subtitle {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+}
+
+.home-title {
+  font-size: 33px;
+  font-weight: 600;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.home-desc {
+  margin-top: 20px;
+  font-size: 18px;
+  max-width: 500px;
+}
+
+/* ✅ Image Section */
+.home-image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  height: 365px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.9s ease-in-out;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .home-slide {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .home-text {
+    width: 100%;
+  }
+
+  .home-title {
+    font-size: 22px;
+  }
+
+  .home-desc {
+    font-size: 16px;
+  }
+
+  .home-image-wrapper {
+    max-width: 100%;
+  }
+
+  .home-image {
+    max-height: 250px;
+  }
+}
