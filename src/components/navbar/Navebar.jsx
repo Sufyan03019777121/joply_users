@@ -8,7 +8,7 @@ import {
   ProfileOutlined,
 } from "@ant-design/icons";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import "./Navbar.css";
+import "./navbar.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
