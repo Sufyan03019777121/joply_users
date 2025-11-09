@@ -6,13 +6,13 @@ import AuthRoutes from "./routes/AuthRoutes";
 function App() {
   return (
     <Router>
-      <Routes>
+      <HashRouter>
         {/* Auth Pages */}
         <Route path="/*" element={<AuthRoutes />} />
 
         {/* Public Pages */}
         <Route path="/app/*" element={<PublicRoutes />} />
-      </Routes>
+      </HashRouter>
     </Router>
   );
 }
