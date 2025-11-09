@@ -59,7 +59,7 @@ const Navbar = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
     message.success("Logged out successfully!");
-    window.location.href = "/signup";
+    window.location.href = "/login";
 
   };
 
