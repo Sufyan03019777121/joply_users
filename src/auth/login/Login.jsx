@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Input, Button, Divider, message } from "antd";
 import { GoogleOutlined } from "@ant-design/icons";
 import axios from "axios";
-import Home from "../../pages/home/Home";
 import { Link } from "react-router-dom";
 import "./login.css";
 
@@ -27,7 +26,7 @@ const Login = () => {
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
 
-      window.location.href = "/app/home";
+      window.location.href = "/home";
     } catch (err) {
       console.error(err);
       message.error(err.response?.data?.msg || "Login failed!");
