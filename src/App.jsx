@@ -5,18 +5,19 @@ import Navbar from "./components/navbar/Navebar";
 import Login from "./auth/login/Login";
 import AuthRoutes from "./routes/AuthRoutes";
 import PublicRoutes from "./routes/PublicRoutes";
+import Signup from "./auth/signup/Signup";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("token"));
 
   return (
     <Router basename="/">
-      {token && <Navbar setToken={setToken} />} {/* Navbar only if logged in */}
+      {token && <Navbar setToken={setToken} />} 
       <Routes>
         {!token ? (
           <>
             <Route path="/login/*" element={<Login setToken={setToken} />} />
-            <Route path="/signup/*" element={<AuthRoutes setToken={setToken} />} />
+            <Route path="/signup/*" element={<Signup setToken={setToken} />} />
             <Route path="/*" element={<Navigate to="/login" />} />
           </>
         ) : (
