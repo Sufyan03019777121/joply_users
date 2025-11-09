@@ -1,17 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PublicRoutes from "./routes/PublicRoutes";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import AuthRoutes from "./routes/AuthRoutes";
+import PublicRoutes from "./routes/PublicRoutes";
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Auth Pages */}
+        {/* Auth Routes */}
         <Route path="/*" element={<AuthRoutes />} />
 
-        {/* Public Pages */}
-        <Route path="/app/*" element={<PublicRoutes />} />
+        {/* Public Routes */}
+        <Route path="/home/*" element={<PublicRoutes />} />
       </Routes>
     </Router>
   );
