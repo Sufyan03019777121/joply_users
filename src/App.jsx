@@ -21,8 +21,9 @@ function App() {
           </>
         ) : (
           <>
-            <Route path="/app/*" element={<PublicRoutes />} />
-            <Route path="/*" element={<Navigate to="/app/home" />} />
+            <Route path="/*" element={<PublicRoutes />} />
+            <Route path="/*" element={<Navigate to="/home" />} />
+           
           </>
         )}
       </Routes>

@@ -27,7 +27,7 @@ const Login = () => {
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
 
-      window.location.href = "/app/home";
+      window.location.href = "/home";
     } catch (err) {
       console.error(err);
       message.error(err.response?.data?.msg || "Login failed!");

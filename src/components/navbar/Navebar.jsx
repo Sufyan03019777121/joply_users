@@ -19,14 +19,14 @@ const Navbar = () => {
   const navigate = useNavigate();
   const { Title } = Typography;
 
-  // Menu items with /app prefix
+  // Menu items with prefix
   const menuItems = [
-    { name: "Home", path: "/app/home" },
-    { name: "About Us", path: "/app/about" },
-    { name: "Our Services", path: "/app/services" },
-    { name: "Contact Us", path: "/app/contact" },
-    { name: "Job View", path: "/app/jobs" },
-    { name: "Register for Job", path: "/app/register-job" },
+    { name: "Home", path: "/home" },
+    { name: "About Us", path: "/about" },
+    { name: "Our Services", path: "/services" },
+    { name: "Contact Us", path: "/contact" },
+    { name: "Job View", path: "/jobs" },
+    { name: "Register for Job", path: "/register-job" },
   ];
 
   // Handle mobile resizing
@@ -59,17 +59,18 @@ const Navbar = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
     message.success("Logged out successfully!");
-    navigate("/signup");
+    window.location.href = "/signup";
+
   };
 
   // Profile Dropdown Menu
   const profileMenu = (
     <Menu>
       <Menu.Item key="1" icon={<ProfileOutlined />}>
-        <Link to="/app/profile">My Profile</Link>
+        <Link to="/profile">My Profile</Link>
       </Menu.Item>
       <Menu.Item key="2" icon={<SettingOutlined />}>
-        <Link to="/app/settings">Settings</Link>
+        <Link to="/settings">Settings</Link>
       </Menu.Item>
       <Menu.Divider />
       <Menu.Item
@@ -86,7 +87,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       {/* Logo */}
-      <Link to="/app/home" className="navbar-logo">
+      <Link to="/home" className="navbar-logo">
         {loading ? (
           <Spin size="small" />
         ) : logo ? (
@@ -127,7 +128,7 @@ const Navbar = () => {
       {/* Right Side */}
       <div className="navbar-right">
         {!isMobile && (
-          <Link to="/app/register-job">
+          <Link to="/register-job">
             <Button type="primary" className="navbar-btn">
               Register for Job
             </Button>
