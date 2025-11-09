@@ -27,7 +27,7 @@ const Login = () => {
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
 
-      window.location.href = "/home";
+      window.location.href = "/app/home";
     } catch (err) {
       console.error(err);
       message.error(err.response?.data?.msg || "Login failed!");
@@ -38,6 +38,8 @@ const Login = () => {
 
   return (
     <>
+      <Home />
+
       <div className="login-container">
         <h2 className="login-title">Login To Your Account</h2>
         <Divider className="login-divider" />
