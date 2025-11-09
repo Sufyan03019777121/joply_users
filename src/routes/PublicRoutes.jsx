@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/home/Home";
-import Navbar from "../components/navbar/Navebar";
 import Profile from "../pages/profile/Profile";
 
 const About = () => <h2 style={{ textAlign: "center", marginTop: 40 }}>ℹ️ About Us</h2>;
@@ -15,7 +14,6 @@ const Settings = () => <h2 style={{ textAlign: "center", marginTop: 40 }}>⚙️
 function PublicRoutes() {
   return (
     <div>
-      <Navbar />
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
