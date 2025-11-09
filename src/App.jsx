@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
 import PublicRoutes from "./routes/PublicRoutes";
 import AuthRoutes from "./routes/AuthRoutes";
 
