@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./auth/login/Login";
 import AuthRoutes from "./routes/AuthRoutes";
 import PublicRoutes from "./routes/PublicRoutes";
 
@@ -7,11 +8,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Auth Routes */}
-        <Route path="/*" element={<AuthRoutes />} />
+        {/* Auth Pages */}
+        <Route path="/login/*" element={<Login />} />
+        <Route path="/signup/*" element={<AuthRoutes />} />
 
-        {/* Public Routes */}
-        <Route path="/home/*" element={<PublicRoutes />} />
+        {/* Public Pages */}
+        <Route path="/*" element={<PublicRoutes />} />
       </Routes>
     </Router>
   );
